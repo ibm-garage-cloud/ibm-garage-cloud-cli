@@ -64,7 +64,7 @@ export enum GitEvent {
 export abstract class GitApi {
   abstract getType(): GitHost;
 
-  async abstract createWebhook(request: CreateWebhook): Promise<string>;
+  abstract createWebhook(request: CreateWebhook): Promise<string>;
 
   abstract buildWebhookParams(eventId: GitEvent): WebhookParams;
 }
